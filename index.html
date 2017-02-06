@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<!-- Dependencies -->
+	<script src="thirdparty/modernizr.custom.js"></script>
+	<!-- script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="thirdparty/js.cookie.js"></script>
+
+	<!-- CSS --> 
+	<link rel="stylesheet" href="build/ableplayer.min.css" type="text/css"/>
+
+	<!-- JavaScript -->
+	<script src="build/ableplayer.min.js"></script>
+</head>	
+<body>
+	<h2>El botón de las manitos activa y desactiva a la intérprete. Desde el rincón inferior derecho se puede agrandar a la intérprete
+	y desde la barra superior se puede desplazar a la intérprete por toda la pantalla. Los videos son un recorte "casero" para ver 
+	cómo funciona, perdón Gastón ;)</h2>
+	<video id="video1" preload="auto" width="480" height="360" data-able-player 
+		data-speed-icons="animals" data-lang="es" data-transcript-div="transc1">
+		<!-- data-youtube-id - optional; 11-character YouTube ID, to play the YouTube video using Able Player.
+		data-youtube-desc-id - optional; 11-character YouTube ID of the described version of a video.-->
+		<!-- data-use-Transcript-button - optional; set to "false" to exclude transcript button from controller. 
+		If using the data-transcript-div attribute to write the transcript to an external container, 
+		you might not want users to be able to toggle the transcript off.-->
+	  <source type="video/webm" src="media/patrimonio.webm" data-sign-src="media/patrimonio-lsa.webm"/>
+	  <!-- source type="video/mp4" src="path_to_video.mp4" data-desc-src="path_to_described_video.mp4"/ -->
+	  <!-- track kind="captions" src="media/wwa_captions_es.vtt"/ -->
+	</video>
+
+	<div id="transc1">
+	</div>
+</body>
+</html>
